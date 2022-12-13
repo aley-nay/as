@@ -1,0 +1,3 @@
+user-agent: *
+Disallow: /admin/*
+Allow: /admin/panel.php
