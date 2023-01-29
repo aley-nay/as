@@ -1,0 +1,151 @@
+html, body{margin:0; padding:0; background: #101827!important;}
+*{color: #FFF!important; font-family: Montserrat!important;}
+a{text-transform: uppercase;text-decoration: none!important;}
+a:hover, a:active, a:focus, i:hover{color: #CAE8D5!important;}
+.dropdown-toggle::after{display: none!important;}
+.dropdown-menu, .animate-menu, #footer .row{background: #151e2f!important;}
+.dropdown-item:focus, .dropdown-item:hover{background: none!important;}
+
+
+
+div#offcanvasTop {
+    height: 10vh!important;
+}
+
+
+#header{
+	background: linear-gradient(90deg, hsla(195, 34%, 35%, 1) 0%, hsla(195, 34%, 35%, 1) 0%, hsla(195, 34%, 35%, 1) 23%, hsla(219, 42%, 11%, 1) 100%);
+	background: -moz-linear-gradient(90deg, hsla(195, 34%, 35%, 1) 0%, hsla(195, 34%, 35%, 1) 0%, hsla(195, 34%, 35%, 1) 23%, hsla(219, 42%, 11%, 1) 100%);
+	background: -webkit-linear-gradient(90deg, hsla(195, 34%, 35%, 1) 0%, hsla(195, 34%, 35%, 1) 0%, hsla(195, 34%, 35%, 1) 23%, hsla(219, 42%, 11%, 1) 100%);
+	background-attachment: fixed;
+}
+
+#header, #main-slogan{height: 100vh;}
+
+a:hover, a:active, a:focus, .animate-menu{transition: all .1s ease-in-out;}
+
+#main-slogan {align-items: center; -webkit-align-items: center;}
+.effect-change {width: 100%;height: auto;}
+.overflow-hidden {overflow: hidden;}
+.effect-change img {
+    transition: all linear 0.7s;
+    -webkit-transition: all linear 0.7s;
+    -moz-transition: all linear 0.7s;
+    -ms-transition: all linear 0.7s;
+    -o-transition: all linear 0.7s;
+    width: 100%;
+}
+.effect-change .img-2 {top: 0;left: 0;}
+.effect-change:hover .img-1, .effect-change .img-2 {
+    opacity: 0!important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -khtml-opacity: 100%;
+}
+
+
+ul{list-style: none;}
+li span{font-size: 10px!important;}
+
+#games .item--info p{width: max-content;}
+#games .item--info{z-index: 2;}
+#games video{z-index: 1;}
+#games video{height: 50vh;}
+#main-slogan img{width: calc(5em + 20vw);z-index: 2;}
+#header video{
+	right: 0;
+	width: 100%;
+	 min-height: 100%; 
+	  height: 100vh;
+  object-fit: cover;
+      z-index: 1;
+}
+#contact p{text-align: justify;}
+#contact h2, #contact span a, #contact-form button, #about-label span,#dc{-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+#contact-form label{color:#626262!important;}
+#contact-form input, #contact-form textarea, div#offcanvasTop input{background: none; border-radius:0px!important; border-bottom: 3px #626262 solid!important;}
+#Hakkimizda p{text-align: justify;}
+#Oyunlarimiz img,#Ekibimiz .team{opacity: 30%;}
+#Oyunlarimiz a:hover img,#Ekibimiz .team:hover{transition: opacity 1s; opacity: 100%;}
+#Oyunlarimiz img,#Ekibimiz .team,#games a {-webkit-filter: grayscale(100%); filter: grayscale(100%);}
+#Oyunlarimiz a:hover img,#Ekibimiz .team:hover,#games a:hover{filter: grayscale(0%);-webkit-filter: grayscale(0%);}
+.gradiento{background: linear-gradient(90deg, hsla(195, 34%, 35%, 1) 0%, hsla(195, 34%, 35%, 1) 0%, hsla(195, 34%, 35%, 1) 23%, hsla(219, 42%, 11%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(195, 34%, 35%, 1) 0%, hsla(195, 34%, 35%, 1) 0%, hsla(195, 34%, 35%, 1) 23%, hsla(219, 42%, 11%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(195, 34%, 35%, 1) 0%, hsla(195, 34%, 35%, 1) 0%, hsla(195, 34%, 35%, 1) 23%, hsla(219, 42%, 11%, 1) 100%);
+    }
+#game-trailer video{height: 20vh}
+
+
+video { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    
+    z-index: -100;
+    
+ background: url('assets/bg/bg.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+
+
+
+
+
+
+.stopfade { 
+   opacity: .5;
+}
+
+#polina { 
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font-weight:100; 
+  background: rgba(0,0,0,0.3);
+  color: white;
+
+
+  float: left;
+  font-size: 1.2rem;
+
+}
+
+#polina button { 
+  display: block;
+  width: 80%;
+  padding: .4rem;
+  border: none; 
+  margin: 1rem auto; 
+  font-size: 1.3rem;
+  background: rgba(255,255,255,0.23);
+  color: #fff;
+  border-radius: 3px; 
+  cursor: pointer;
+  transition: .3s background;
+}
+#polina button:hover { background: rgba(0,0,0,0.5);}
+@media screen and (max-width: 800px) {
+  html { background: url(assets/bg/bg.jpg) #000 no-repeat center center fixed; }
+  #bgvid { display: none; }
+  #polina{width: 100vw}
+  #footer img{width: 40vw!important;}
+}
+#polina:hover{cursor:pointer;}
+.zoom{
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transition: transform .7s;
+    -webkit-transition: transform .7s;
+    -moz-transition: transform .7s;
+    -ms-transition: transform .7s;
+    -o-transition: transform .7s;
+}
+#polina:hover #before{display: none;}
+#polina #after{display: none;}
+#polina:hover #after{display: block;}
