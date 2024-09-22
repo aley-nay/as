@@ -1,30 +1,51 @@
-html, body{margin:0; padding:0; background: #101827!important;}
+html, body{margin:0; padding:0; background: #000000!important;}
 *{color: #FFF!important; font-family: Montserrat!important;}
 a{text-transform: uppercase;text-decoration: none!important;}
-a:hover, a:active, a:focus, i:hover{color: #CAE8D5!important;}
+a:hover, a:active, a:focus, i:hover{color: #2488df!important;}
 .dropdown-toggle::after{display: none!important;}
-.dropdown-menu, .animate-menu, #footer .row{background: #151e2f!important;}
+.dropdown-menu, .animate-menu,div#offcanvasTop{background: #000000!important;}
 .dropdown-item:focus, .dropdown-item:hover{background: none!important;}
-
+.form-control:focus{box-shadow: none!important;}
 
 
 div#offcanvasTop {
-    height: 10vh!important;
+    height: 20vh!important;
 }
+div#offcanvasTop .col-12 input {height: 10vh;}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")!important;
+}
+.tz{z-index: 1030!important;
+  top: 50px!important;}
+#header {
+  min-height: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+/*
+#headerx{
 
-
-#header{
+  background: url("../assets/bg.jpg"); background-repeat: no-repeat; background-size: cover;*/
+  
+  /*
 	background: linear-gradient(90deg, hsla(195, 34%, 35%, 1) 0%, hsla(195, 34%, 35%, 1) 0%, hsla(195, 34%, 35%, 1) 23%, hsla(219, 42%, 11%, 1) 100%);
 	background: -moz-linear-gradient(90deg, hsla(195, 34%, 35%, 1) 0%, hsla(195, 34%, 35%, 1) 0%, hsla(195, 34%, 35%, 1) 23%, hsla(219, 42%, 11%, 1) 100%);
 	background: -webkit-linear-gradient(90deg, hsla(195, 34%, 35%, 1) 0%, hsla(195, 34%, 35%, 1) 0%, hsla(195, 34%, 35%, 1) 23%, hsla(219, 42%, 11%, 1) 100%);
 	background-attachment: fixed;
-}
+  
+}*/
 
 #header, #main-slogan{height: 100vh;}
 
 a:hover, a:active, a:focus, .animate-menu{transition: all .1s ease-in-out;}
 
-#main-slogan {align-items: center; -webkit-align-items: center;}
+#main-slogan {  width: 110%;
+  height: 110%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background: url('../assets/bg.jpg') no-repeat left center / cover;}
 .effect-change {width: 100%;height: auto;}
 .overflow-hidden {overflow: hidden;}
 .effect-change img {
@@ -51,29 +72,28 @@ li span{font-size: 10px!important;}
 #games .item--info{z-index: 2;}
 #games video{z-index: 1;}
 #games video{height: 50vh;}
-#main-slogan img{width: calc(5em + 20vw);z-index: 2;}
-#header video{
-	right: 0;
-	width: 100%;
-	 min-height: 100%; 
-	  height: 100vh;
-  object-fit: cover;
-      z-index: 1;
-}
+#main-slogan img{    width: calc(5em + 0vw);
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);}
+
 #contact p{text-align: justify;}
 #contact h2, #contact span a, #contact-form button, #about-label span,#dc{-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;}
 #contact-form label{color:#626262!important;}
-#contact-form input, #contact-form textarea, div#offcanvasTop input{background: none; border-radius:0px!important; border-bottom: 3px #626262 solid!important;}
+#contact-form input, #contact-form textarea, div#offcanvasTop input{text-decoration: none; transition: border-bottom 0.5s;  background: none; border-radius:0px!important; border-bottom: 3px #626262 solid!important;}
+#contact-form input:focus, #contact-form textarea:focus, div#offcanvasTop input:focus {
+  border-bottom: 3px #2488df solid !important;}
+
 #Hakkimizda p{text-align: justify;}
 #Oyunlarimiz img,#Ekibimiz .team{opacity: 30%;}
 #Oyunlarimiz a:hover img,#Ekibimiz .team:hover{transition: opacity 1s; opacity: 100%;}
 #Oyunlarimiz img,#Ekibimiz .team,#games a {-webkit-filter: grayscale(100%); filter: grayscale(100%);}
 #Oyunlarimiz a:hover img,#Ekibimiz .team:hover,#games a:hover{filter: grayscale(0%);-webkit-filter: grayscale(0%);}
-.gradiento{background: linear-gradient(90deg, hsla(195, 34%, 35%, 1) 0%, hsla(195, 34%, 35%, 1) 0%, hsla(195, 34%, 35%, 1) 23%, hsla(219, 42%, 11%, 1) 100%);
-    background: -moz-linear-gradient(90deg, hsla(195, 34%, 35%, 1) 0%, hsla(195, 34%, 35%, 1) 0%, hsla(195, 34%, 35%, 1) 23%, hsla(219, 42%, 11%, 1) 100%);
-    background: -webkit-linear-gradient(90deg, hsla(195, 34%, 35%, 1) 0%, hsla(195, 34%, 35%, 1) 0%, hsla(195, 34%, 35%, 1) 23%, hsla(219, 42%, 11%, 1) 100%);
-    }
+.gradiento{background: linear-gradient(90deg, #0277dd 0%, #0277dd 0%, #2588df 23%, hsl(0deg 0% 0%) 100%);
+    background: -moz-linear-gradient(90deg, #0277dd 0%, #0277dd 0%, #2588df 23%, hsl(0deg 0% 0%) 100%);
+    background: -webkit-linear-gradient(90deg, #0277dd 0%, #0277dd 0%, #2588df 23%, hsl(0deg 0% 0%) 100%);
+  }
 #game-trailer video{height: 20vh}
 
 
@@ -92,8 +112,10 @@ video {
   transition: 1s opacity;
 }
 
-
-
+.btn.border-primary.rounded-0{transition: 2s background;}
+.btn.border-primary.rounded-0:hover{background: linear-gradient(180deg, #0277dd 0%, #0277dd 0%, #2588df 23%, hsl(0deg 0% 0%) 100%);
+  background: -moz-linear-gradient(180deg, #0277dd 0%, #0277dd 0%, #2588df 23%, hsl(0deg 0% 0%) 100%);
+  background: -webkit-linear-gradient(180deg, #0277dd 0%, #0277dd 0%, #2588df 23%, hsl(0deg 0% 0%) 100%);}
 
 
 
